@@ -1,0 +1,274 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TryCatchbyTejasri" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1226,2824" sap2010:WorkflowViewState.IdRef="TryCatchbyTejasri_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="45">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OmniPage.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TryCatchbyTejasri" sap:VirtualizedContainerService.HintSize="1236,2759" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="rough" sap:VirtualizedContainerService.HintSize="1174,2637" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="Review" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Create Insurance Quote" sap:VirtualizedContainerService.HintSize="1112,2515" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="136bec72-cceb-4e85-a859-ba51ecfd700c" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1078,2289" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Name="TestData" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1016,2165" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <TryCatch.Try>
+                  <Sequence sap:VirtualizedContainerService.HintSize="978,1928" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="Actions After Entering Conatrct Deatils" sap:VirtualizedContainerService.HintSize="916,1804" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="ActualURL" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ClickType="Single" DelayBefore="4" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="854,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="136bec72-cceb-4e85-a859-ba51ecfd700c" Version="V1">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://tupqmdbsit.tuneprotect.com:10002/sap/bc/ui2/flp#ZPQM_CREINSQUO-create&amp;/0" DesignTimeRectangle="836, 713, 33, 21" DesignTimeScaleFactor="0.6700000166893005" ElementType="Button" FriendlyName="'Save'" FullSelectorArgument="&lt;webctrl idx='2' ui5-class='sap.m.Button' ui5-role='button' ui5p-text='Save' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' ui5-class='sap.m.Button' ui5-role='button' ui5p-text='Save' type='' class='sapMBtnBase sapMBtn sapMBtnInverted sapMBarChild' aaname='Save' check:innerText='Save' /&gt;" Guid="c5f6d731-1d71-4c6d-bb0a-cb85841aa4fa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAAkCAYAAADGrhlwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALLSURBVFhH7VhNaxpRFO06m/4P/0F/QXHpsrtsuwlkl2VwF8gmDQGXKSELoYS4KEgRYjYhuGhMS1CkdrCR0RjEMX6N8eP03nnvjmOrohTCaD1wFu/d++I5c++7E32FFcPakN+xNuR3jBn6+quNtx9+4PX2N2xs3fqarJG1smYvXEMcWAYjf5I1e025htjtpAPLQNYucA0tY3WErF3gGpqUuEwUrA35lYL/21DgYwXJal+fIAz6KBdq2A5Pzn9JCuY3FK4g/axyO3UbWbMLa6DWqFp4N+nMC1Iwv6ErWyWS+KDshYs4f+wiGcv8nf/CFCxuqN3C3uEUA2QwkvdUjlrS+G4iQLHgTVftFSuj/JMnlHnPbmFXn48WeujIeZseVuLn+GdMoWCBljORbOpkxjOJLTQQ/XKPNzonEGvAopBVbSGZs1F2WnSIdILiRzUYvBy0caDz39/1eAdWzqR1BgfFobPu0PnzmxYM53wP8VOtYQYFCw2FjXABe6kGsrX+6CkSOuUqQk5OBsHDnJu/k1MDxMoWnVik6CyRvuD4PeJ1XongKrJOtIuoHjKBlKqqOq/2plGwmKExkviYBcMx1kfy0y1CiQaM8X9+HagKkMBLHeS2O1PVxGNN3UlZT4Ccn0XB/Ib2SzSyu4h/HlXAmXzO1SJDZ9SSjl5qsasiNk8KiBiqhUaCSrjmfGq7uK5e+lLuo1Soh+tUDVEPI7G8zplOwdyGtnW/MzrNrhrbeoyj2cDO1oMSSygbFuI8HNRy7Anv5pVJcGXJWMR9h+VxbOo7VCfDKQtJkwaEbeP4aKRjGgULtFwGmxdPyDa1IMZgCMukF+u+yglRS7kTrmkjeqfvgLdlTvVkI3TypdE+k6ec6bmf8uLWf38WBf9wh/xFwdqQXylYXUMr9xV85X4kWbmfsRgcYLfLYIw1slavGcaYoVXA2pDfsTbkbwC/ATKO8KGwdX2+AAAAAElFTkSuQmCC" InformativeScreenshot="60f6601c693db4f9f9e83d7d0c7e933e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Insurance Quote' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ClickType="Single" DelayBefore="4" DisplayName="Click 'Simulate Underwriting'" sap:VirtualizedContainerService.HintSize="854,166" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="136bec72-cceb-4e85-a859-ba51ecfd700c" Version="V1">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://tupqmdbsit.tuneprotect.com:10002/sap/bc/ui2/flp#ZPQM_CREINSQUO-create&amp;/0" DesignTimeRectangle="874, 713, 102, 21" DesignTimeScaleFactor="0.6700000166893005" ElementType="Button" FriendlyName="'Simulate Underwriting'" FullSelectorArgument="&lt;webctrl ui5-class='sap.m.Button' ui5-role='button' ui5p-text='Simulate Underwriting' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-class='sap.m.Button' ui5-role='button' ui5p-text='Simulate Underwriting' tag='BUTTON' type='' class='sapMBtnBase sapMBtn sapMBarChild' aaname='Simulate Underwriting' check:innerText='Simulate Underwriting' /&gt;" Guid="625784e5-8321-4801-85aa-3395e6449b6c" ImageBase64="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" InformativeScreenshot="d01cad5ba3c420e3d397ed59979417b4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Insurance Quote' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ClickType="Single" DelayBefore="3" DisplayName="Click 'Review'" sap:VirtualizedContainerService.HintSize="854,166" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="136bec72-cceb-4e85-a859-ba51ecfd700c" Version="V1">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://tupqmdbsit.tuneprotect.com:10002/sap/bc/ui2/flp#ZPQM_CREINSQUO-create?accountName=Dykin%2520Engineering%2520Part%2520%2526%2520Services%2520S&amp;currentQuoteOptionId=2369747&amp;fromWorklist=true&amp;sap-app-origin-hint=&amp;submissionId=2369680&amp;/0" DesignTimeRectangle="1071, 713, 41, 21" DesignTimeScaleFactor="0.6700000166893005" ElementType="Button" FriendlyName="'Review'" FullSelectorArgument="&lt;webctrl ui5-class='sap.m.Button' ui5-role='button' ui5p-text='Review' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-class='sap.m.Button' ui5-role='button' ui5p-text='Review' tag='BUTTON' type='' class='sapMBtnBase sapMBtn sapMBarChild' aaname='Review' check:innerText='Review' /&gt;" Guid="a3ff715b-0531-4b58-be3b-3619e467718d" InformativeScreenshot="1a0322cfc88ca40c1a8dcae4aafbba83.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Insurance Quote' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                      <uix:NClick ClickType="Single" DelayBefore="3" DisplayName="Click 'Review'" sap:VirtualizedContainerService.HintSize="854,166" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="136bec72-cceb-4e85-a859-ba51ecfd700c" Version="V1">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://tupqmdbsit.tuneprotect.com:10002/sap/bc/ui2/flp#ZPQM_CREINSQUO-create?accountName=Dykin%2520Engineering%2520Part%2520%2526%2520Services%2520S&amp;currentQuoteOptionId=2369747&amp;fromWorklist=true&amp;sap-app-origin-hint=&amp;submissionId=2369680&amp;/0" DesignTimeRectangle="1071, 713, 41, 21" DesignTimeScaleFactor="0.6700000166893005" ElementType="Button" FriendlyName="'Review'" FullSelectorArgument="&lt;webctrl ui5-class='sap.m.Button' ui5-role='button' ui5p-text='Review' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-class='sap.m.Button' ui5-role='button' ui5p-text='Review' tag='BUTTON' type='' class='sapMBtnBase sapMBtn sapMBarChild' aaname='Review' check:innerText='Review' /&gt;" Guid="a3ff715b-0531-4b58-be3b-3619e467718d" InformativeScreenshot="1a0322cfc88ca40c1a8dcae4aafbba83.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Insurance Quote' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NCheckState DisplayName="Check App State 'Working'" sap:VirtualizedContainerService.HintSize="854,516" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="136bec72-cceb-4e85-a859-ba51ecfd700c" Version="V3">
+                        <uix:NCheckState.IfExists>
+                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,290" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NGetText DisplayName="Get Text 'Working'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="136bec72-cceb-4e85-a859-ba51ecfd700c" TextString="[Review]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://tupqmdbsit.tuneprotect.com:10002/sap/bc/ui2/flp#ZPQM_CREINSQUO-create&amp;/Submissions(2526501L)&amp;QuoteOptions(2526573L)/ReviewQuote" DesignTimeRectangle="1063, 190, 33, 10" DesignTimeScaleFactor="0.6700000166893005" ElementType="Text" FriendlyName="'Working'" FullSelectorArgument="&lt;webctrl ui5-role='link' ui5p-text='Working' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-role='link' ui5p-text='Working' tag='A' type='' class='sapMLnk sapMLnkMaxWidth' /&gt;" Guid="73053484-7156-42a3-8bc2-5364b4923ee5" InformativeScreenshot="1a2971593d4a214dff6c335b68d2fcf5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Insurance Quote' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                          </Sequence>
+                        </uix:NCheckState.IfExists>
+                        <uix:NCheckState.IfNotExists>
+                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,290" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NGetText DisplayName="Get Text 'Working'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="136bec72-cceb-4e85-a859-ba51ecfd700c" TextString="[Review]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://tupqmdbsit.tuneprotect.com:10002/sap/bc/ui2/flp#ZPQM_CREINSQUO-create&amp;/Submissions(2526501L)&amp;QuoteOptions(2526573L)/ReviewQuote" DesignTimeRectangle="1063, 190, 33, 10" DesignTimeScaleFactor="0.6700000166893005" ElementType="Text" FriendlyName="'Working'" FullSelectorArgument="&lt;webctrl ui5-role='link' ui5p-text='Working' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-role='link' ui5p-text='Working' tag='A' type='' class='sapMLnk sapMLnkMaxWidth' /&gt;" Guid="73053484-7156-42a3-8bc2-5364b4923ee5" InformativeScreenshot="1a2971593d4a214dff6c335b68d2fcf5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Insurance Quote' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                          </Sequence>
+                        </uix:NCheckState.IfNotExists>
+                        <uix:NCheckState.Target>
+                          <uix:TargetAnchorable BrowserURL="https://tupqmdbsit.tuneprotect.com:10002/sap/bc/ui2/flp#ZPQM_CREINSQUO-create?accountName=Dykin%2520Engineering%2520Part%2520%2526%2520Services%2520S&amp;currentQuoteOptionId=2526573&amp;fromWorklist=true&amp;sap-app-origin-hint=&amp;submissionId=2526501&amp;/Submissions(2526501L)&amp;QuoteOptions(2526573L)/ReviewQuote" DesignTimeRectangle="1063, 190, 33, 10" DesignTimeScaleFactor="0.6700000166893005" ElementType="Text" FriendlyName="'Working'" FullSelectorArgument="&lt;webctrl ui5-role='link' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-role='link' tag='A' type='' class='sapMLnk sapMLnkMaxWidth' aaname='Working' check:innerText='Working' /&gt;" Guid="7e1db977-5c58-4273-b40b-40659fd77153" InformativeScreenshot="1a2971593d4a214dff6c335b68d2fcf5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Insurance Quote' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                        </uix:NCheckState.Target>
+                      </uix:NCheckState>
+                      <uix:NGetText DisplayName="Get Text 'Working'" sap:VirtualizedContainerService.HintSize="854,166" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="136bec72-cceb-4e85-a859-ba51ecfd700c" TextString="[Review]" Version="V3">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="https://tupqmdbsit.tuneprotect.com:10002/sap/bc/ui2/flp#ZPQM_CREINSQUO-create&amp;/Submissions(2526501L)&amp;QuoteOptions(2526573L)/ReviewQuote" DesignTimeRectangle="1063, 190, 33, 10" DesignTimeScaleFactor="0.6700000166893005" ElementType="Text" FriendlyName="'Working'" FullSelectorArgument="&lt;webctrl ui5-role='link' ui5p-text='Working' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-role='link' ui5p-text='Working' tag='A' type='' class='sapMLnk sapMLnkMaxWidth' /&gt;" Guid="73053484-7156-42a3-8bc2-5364b4923ee5" InformativeScreenshot="1a2971593d4a214dff6c335b68d2fcf5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create Insurance Quote' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="854,94" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Review]" />
+                    </Sequence>
+                  </Sequence>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="466,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="si:IOException">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="si:IOException" Name="exception" />
+                      </ActivityAction.Argument>
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+                <TryCatch.Finally>
+                  <Sequence sap:VirtualizedContainerService.HintSize="907,467" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If Condition="[Review=&quot;Working&quot;]" sap:VirtualizedContainerService.HintSize="845,356" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="400,196" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="338,85" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Pass&quot;]" />
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="400,196" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="338,85" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Fail&quot;]" />
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </TryCatch.Finally>
+              </TryCatch>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="bb3f2e0a65a200f52d5ca75d4614309e.jpg" Selector="&lt;html app='chrome.exe' title='Create Insurance Quote' /&gt;" Url="https://tupqmdbsit.tuneprotect.com:10002/sap/bc/ui2/flp#ZPQM_CREINSQUO-create?accountName=Dykin%2520Engineering%2520Part%2520%2526%2520Services%2520S&amp;currentQuoteOptionId=2526573&amp;fromWorklist=true&amp;sap-app-origin-hint=&amp;submissionId=2526501&amp;/0" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
